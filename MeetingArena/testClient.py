@@ -38,7 +38,7 @@ def start_audio_stream():
 
 # GUI Building Area
 window = tk.Tk()
-window.title("Arena")
+window.title("Arena1")
 window.geometry("300x300")
 
 label_target_ip = tk.Label(window, text = "Target IP")

@@ -14,7 +14,6 @@ server = StreamingServer(local_ip_address, 9999)
 receiver = AudioReceiver(local_ip_address, 9998)
 
 # Functionality
-
 def start_listening():
     t1 = threading.Thread(target=server.start_server)
     t2 = threading.Thread(target=receiver.start_server)

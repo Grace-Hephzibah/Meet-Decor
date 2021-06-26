@@ -1,12 +1,10 @@
 import cv2
 import numpy as np
 import face_recognition
-
+from PIL import ImageGrab
 import DB
 
 from datetime import datetime
-
-
 
 def findEncodings(images):
     encodeList = []
@@ -30,11 +28,11 @@ def markAttendance(name):
         f.writelines(f'\n{name},{dtString}')
 
 
-#### FOR CAPTURING SCREEN RATHER THAN WEBCAM
-# def captureScreen(bbox=(300,300,690+300,530+300)):
-#     capScr = np.array(ImageGrab.grab(bbox))
-#     capScr = cv2.cvtColor(capScr, cv2.COLOR_RGB2BGR)
-#     return capScr
+def captureScreen(bbox=(0,0, 1920,1080)):
+    #300,300,690+300,530+300
+     capScr = np.array(ImageGrab.grab(bbox))
+     capScr = cv2.cvtColor(capScr, cv2.COLOR_RGB2BGR)
+     return capScr
 
 encodeListKnown = findEncodings(DB.images)
 print('Encoding Complete')
@@ -42,8 +40,8 @@ print('Encoding Complete')
 cap = cv2.VideoCapture(0)
 
 while True:
-    success, img = cap.read()
-    # img = captureScreen()
+    #success, img = cap.read()
+    img = captureScreen()
     imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
     imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
 
@@ -53,12 +51,10 @@ while True:
     for encodeFace, faceLoc in zip(encodesCurFrame, facesCurFrame):
         matches = face_recognition.compare_faces(encodeListKnown, encodeFace)
         faceDis = face_recognition.face_distance(encodeListKnown, encodeFace)
-        # print(faceDis)
         matchIndex = np.argmin(faceDis)
 
         if matches[matchIndex]:
             name = DB.classNames[matchIndex].upper()
-            # print(name)
             y1, x2, y2, x1 = faceLoc
             y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
             cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
@@ -66,5 +62,5 @@ while True:
             cv2.putText(img, name, (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
             markAttendance(name)
 
-    cv2.imshow('Webcam', img)
+    #cv2.imshow('Webcam', img)
     cv2.waitKey(15000)
