@@ -5,10 +5,13 @@ Hack The Mountains Hackathon Project
 
 - Face Recognition + Face Attendance
 - Easy csv file that shows the attendance status of every student
-- Meeting Arena (Video and audio enabling option)
 - Virtual Drawing Board
-- GUI Chat facility
 - (Hoping to build more features)
+
+# Additional Features (Not added but worked on)
+- Meeting Arena (Video and audio enabling option)
+- GUI Chat facility
+
 
 # TimeLine of Commit
 
@@ -17,3 +20,6 @@ Hack The Mountains Hackathon Project
  
 - 3:30 pm commit 
  <p> The Meeting Arena is working. Next is to integrate the attendance and the Arena </p>
+ 
+- 5:00 pm commit
+<p> The Meeting Arena is not working. Some firewall Issues. Dropping the arena part from the project.<br> Must make tweeks in the first commit docs.</p>
