@@ -23,3 +23,6 @@ Hack The Mountains Hackathon Project
  
 - 5:00 pm commit
 <p> The Meeting Arena is not working. Some firewall Issues. Dropping the arena part from the project.<br> Must make tweeks in the first commit docs.</p>
+
+- 6:00 pm commit
+<p> Tweeks of Face Attendance part </p>
