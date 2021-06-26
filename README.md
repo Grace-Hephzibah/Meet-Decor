@@ -26,3 +26,7 @@ Hack The Mountains Hackathon Project
 
 - 6:00 pm commit
 <p> Tweeks of Face Attendance part </p>
+
+- 10:00 pm commit
+<p> Virtual Paint Fully Functional </p> 
+
