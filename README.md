@@ -13,4 +13,7 @@ Hack The Mountains Hackathon Project
 # TimeLine of Commit
 
 - 1:00 pm commit 
- <p> The webcam identifies you and gives an attendance data that is stored in a csv file <p>
+ <p> The webcam identifies you and gives an attendance data that is stored in a csv file </p>
+ 
+- 3:30 pm commit 
+ <p> The Meeting Arena is working. Next is to integrate the attendance and the Arena </p>
