@@ -68,4 +68,5 @@ My project ‘Meet Decor’ solves this problem by automating the attendance cal
 - Stats Analyzer to help in effective learning in weak areas
 - Database to provide exclusive access to teachers and students
 
+## <a href = "https://www.youtube.com/watch?v=f31qXyEBlW4&t=9s"> Video Link </a>
 # Hack The Mountains 2.0
