@@ -2,7 +2,7 @@
 Hack The Mountains Hackathon Project
 
 # Aim
-Meet Decor is a Solo Project that is aimed to develop a Meet Arena where students can join and learn. Here students are continuously AI monitored and given attendance based on their presence. You can also stream your virtual board. It has quite a few colors to pick from. This helps the visual part of understanding easier. 
+Meet Decor is a Solo Project that is envisioned to bring a new and engaging classroom experience. It has a developed Meet Arena where students can join and learn. Here students are continuously AI monitored and given attendance based on their presence. You can also stream your virtual board. It has quite a few colors to pick from. This helps the visual part of understanding easier. 
 
 # What's next from here
 - Well, the meet arena is not fully functional. That is something that needs to figured out. 
