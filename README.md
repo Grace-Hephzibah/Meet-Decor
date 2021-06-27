@@ -21,7 +21,7 @@ My project ‘Meet Decor’ solves this problem by automating the attendance cal
 - tkinter
 - socket
 - threading
-## Virtual Paint
+## Virtual Board
 - Mediapipe
 - OpenCV
 - time
