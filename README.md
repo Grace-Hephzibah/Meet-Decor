@@ -36,13 +36,7 @@ My project ‘Meet Decor’ solves this problem by automating the attendance cal
 - Face Recognition + Face Attendance
 - Easy csv file that shows the attendance status of every student
 - Virtual Drawing Board
-- (Hoping to build more features)
-
-# Additional Features (Not added but to be worked on)
-- Meet Arena (Video and audio enabling option) - (Basic Structure is created)
-- GUI Chat facility
-- DataBase
-
+- Meet Arena
 
 # TimeLine of Commit
 
