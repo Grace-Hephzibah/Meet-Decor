@@ -1,4 +1,4 @@
-# Meet Decor
+# <img src = "https://github.com/Grace-Hephzibah/Meet-Decor/blob/main/logo.png" width=auto height="60"> Meet Decor 
 Hack The Mountains Hackathon Project
 
 # Aim
