@@ -63,4 +63,7 @@ Meet Decor is a Solo Project that is envisioned to bring a new and engaging clas
 - 10:00 pm commit
 <p> Virtual Paint Fully Functional </p> 
 
+- 3:00 pm commit (next day)
+- <p> All tweeks and chenges </p>
+- 
 # Hack The Mountains 2.0
