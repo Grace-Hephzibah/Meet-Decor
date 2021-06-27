@@ -20,14 +20,7 @@ class handDetector():
     def findHands(self, img, draw = True):
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.results = self.hands.process(imgRGB)
-        # print(results)  # <class 'mediapipe.python.solution_base.SolutionOutputs'>
-        # print(results.multi_hand_landmarks)
-        #  None (or)
-        # [landmark {
-        #   x: 0.07492467
-        #   y: 0.6441997
-        #   z: 3.7653067e-06
-        # }]
+
         if self.results.multi_hand_landmarks:
             for handlns in self.results.multi_hand_landmarks:
                 if draw:
@@ -66,12 +59,7 @@ class handDetector():
             return self.lnList
 
     def fingersUp(self):
-        """
-        using the landmark list of selected hand returns a list of 0's and 1's .
-        where 0 is finger down(closed) and 1 is finger up(open)
-        ex: [0,0,1,0,0] denotes middle finger is open and rest of the fingers are closed
-        :return fingers: list of status of fingers in 0/1
-        """
+
         # tips are 4,8,12,16,20
         fingers = []
         if len(self.lnList) != 0:
